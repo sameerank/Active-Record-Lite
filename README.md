@@ -17,6 +17,12 @@ An ORM inspired by the functionality of Active Record, which is the M (the model
 ## One way to use this:
   * Open a pry or irb session within the Active Record Lite directory
   * Type `require './lib/associatable'`. This file requires `searchable`, which in turn also requires `sql_object`. Therefore, requiring this file will mixin all the modules that extend `SQLObject`.
-  * ![Alt text](1.png?raw=true "Title")
+    * ![Require SQLObject](1.png?raw=true "Require SQLObject")
   * Next, set up the model classes that correspond to the example database's tables.
-  * ![Alt text](2.png?raw=true "Title")
+    * ![Set up the model classes](2.png?raw=true "Set up the model classes")
+  * Let's try changing a cat's name in the cats table from "Markov" to "Turing".
+    * ![Change a model's attribute](3.png?raw=true "Change a model's attribute")
+  * We can also search for a cat using a `where` criterion.
+    * ![Search by where criterion](4.png?raw=true "Search by where criterion")
+  * And finally, we can explore associations among the tables according to their `belongs_to`, `has_many`, and `has_one_through` relationships
+    * ![Explore table relationships](5.png?raw=true "Explore table relationships")
